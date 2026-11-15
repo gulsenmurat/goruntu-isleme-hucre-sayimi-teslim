@@ -1,0 +1,33 @@
+{
+  "student_number": "264309500",
+  "seed": 11526,
+  "dataset": "Fluo-N2DH-GOWT1",
+  "baseline": {
+    "method": "raw_Otsu_connected_components",
+    "min_area": 40
+  },
+  "chosen_experiment": "E15_open3",
+  "config": {
+    "id": "E15_open3",
+    "intensity": "stretch",
+    "filter": "gauss3",
+    "segment": "otsu",
+    "morph": [
+      [
+        "open",
+        3
+      ]
+    ],
+    "min_area": 40,
+    "watershed": false,
+    "min_distance": 9
+  },
+  "selection_sha256": "acc9683837950efd3e4d87fd71b2b192124192ec9a1ddfa0fe6d16c9970e22e0",
+  "selection_rule": "5 validation + 10 development seq01 with >=5 intervening frames; 3x5 seq02 blocks with >=5 intervening frames",
+  "validation_metrics": {
+    "validation_MAE": 4.2,
+    "validation_RMSE": 4.626013402488151,
+    "mean_seconds": 0.018931067400171742
+  },
+  "phase": "STAGE1_LOCKED_BEFORE_TEST_REFERENCES"
+}

@@ -1,0 +1,14 @@
+{
+  "student_number": "264309500",
+  "seed": 11526,
+  "dataset": "Fluo-N2DH-GOWT1",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "opencv": "4.13.0",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "skimage": "0.26.0",
+  "matplotlib": "3.10.8",
+  "tifffile": "2026.5.15",
+  "baseline_min_area": 40
+}

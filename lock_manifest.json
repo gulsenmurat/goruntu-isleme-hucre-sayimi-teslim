@@ -1,0 +1,8 @@
+{
+  "student_number": "264309500",
+  "seed": 11526,
+  "selected_frames_sha256": "acc9683837950efd3e4d87fd71b2b192124192ec9a1ddfa0fe6d16c9970e22e0",
+  "pipeline_sha256": "a96c8d62cb797f42b858fbb44fb664b177bda9fa37e678fa9cad46ef34c41313",
+  "test_predictions_sha256": "f64d0fb5f5e83980f2f7ac483082c748917ec20617014bc60a67e25405d90fd6",
+  "stage": "NO_TEST_REFERENCES_READ"
+}
