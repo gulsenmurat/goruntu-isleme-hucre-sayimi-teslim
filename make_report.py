@@ -187,9 +187,12 @@ def build(workdir='.'):
         'filtreleri, eşikleri ve morfolojik sıraları bu zincir üzerinde karşılaştırdım.')
     exp_rows=[]
     for r in exp.sort_values('experiment_id').itertuples():
-        m=str(r.morphology).replace('[[','').replace(']]','').replace('"','')
+        ops=json.loads(r.morphology)
+        morph_text=' + '.join(f'{name}{size}' for name,size in ops) if ops else '-'
+        if r.watershed:
+            morph_text=f'WS{int(r.min_distance)} + '+morph_text
         exp_rows.append((r.experiment_id.split('_')[0],r.intensity,r.filter,r.segmentation,
-                         ('WS+' if r.watershed else '')+m[:17],f'{r.development_MAE:.2f}',f'{r.mean_seconds:.3f}'))
+                         morph_text,f'{r.development_MAE:.2f}',f'{r.mean_seconds:.3f}'))
     tbl(['ID','Yoğunluk','Filtre','Eşik','Morfoloji','MAE','s/kare'],exp_rows,
         [13*mm,29*mm,22*mm,26*mm,46*mm,18*mm,20*mm])
     put('Tablo 2. Yirmi dört deneyin geliştirme hataları ve ortalama işlem süreleri.','caption')
