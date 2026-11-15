@@ -49,4 +49,4 @@ Bu sonuç, E15'in Sequence 01'deki başarısının Sequence 02'ye taşınmadığ
 - Test: `test_results.csv` ve `test_metrics.csv`
 - Ortam ve seçim: `analysis_environment.json`, `selected_frames.csv`
 
-Teknik PDF ve mikroskobik görüntüler özel ders teslimi için ayrıdır. GitHub klasöründe veri setinin TIFF dosyaları veya anotasyonları yer almaz. İki aşamalı Git geçmişi henüz GitHub'a aktarılmamıştır.
+Teknik PDF ve mikroskobik görüntüler özel ders teslimi için ayrıdır. GitHub klasöründe veri setinin TIFF dosyaları veya anotasyonları yer almaz. GitHub'a dosyalar iki aşamada yüklenmiştir: `01442c5` (kilitlenen tahminler) ve `f1f7afc` (test değerlendirmesi). Bu web yüklemeleri önceki yerel deney geçmişinin birebir aktarımı değildir.

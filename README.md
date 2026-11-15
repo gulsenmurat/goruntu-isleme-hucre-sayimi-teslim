@@ -76,7 +76,7 @@ Yerel Jupyter gerekmiyor. Projede `main.ipynb` bulunduğu için Google Colab'da 
 5. `python analysis_core.py 2 --data data/Fluo-N2DH-GOWT1 --lock-commit COMMIT_SHA` komutunu çalıştırın. İkinci aşama önce commit'teki kilit dosyalarını doğrular, sonra test referanslarını okur.
 6. `python make_report.py` ve `python verify_results.py` komutlarını çalıştırın. Test sonuçlarını ikinci bir Git commit'ine alın.
 
-Mevcut proje geçmişinde kilit tahminleri önceki bir commit'te, değerlendirme sonuçları sonraki bir commit'te kayıtlıdır. Bu geçmiş yerel olarak oluşturulmuş; GitHub'a henüz gönderilmemiştir. Yeni bir GitHub deposu açıldığında commit geçmişi korunarak yüklenmelidir.
+GitHub üzerinde `01442c5` commit'iyle kilitli tahminler, ardından `f1f7afc` commit'iyle bağımsız test değerlendirmesi yüklenmiştir. Bu kayıtlar dosyaların GitHub'a yüklenme sırasını gösterir; test referanslarının ilk kez ne zaman okunduğunu tek başına kanıtlamaz. Deney sırasında oluşturulan özgün yerel Git geçmişi ayrı bir kayıt olarak korunmuştur.
 
 ## Veri paylaşımı
 
